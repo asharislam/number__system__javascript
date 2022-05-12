@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+
+
+    <script>
+        // Ict number system converting 
+        // Using toString
+        document.write("************ toSrting ***************");
+
+        var x = 3.1416;
+        document.write(x + " type: " + typeof(x) + "<br>");
+
+        s = x.toString(2);
+        document.write(s + " type: " + typeof(s) + "<br>");
+
+        s = x.toString(8);
+        document.write(s + " type: " + typeof(s) + "<br>");
+
+        s = x.toString(10);
+        document.write(s + " type: " + typeof(s) + "<br>");
+
+        s = x.toString(16);
+        document.write(s + " type: " + typeof(s) + "<br>");
+
+        document.write("************ toFixed *************** <br>");
+        // How many stape you want take after.
+
+        s = x.toFixed(2);
+        document.write(s + " type: " + typeof(s) + "<br>");
+
+
+
+        // toPrecision
+        document.write("************ toPrecision *************** <br>");
+        // How many stape you want take before and after.
+
+        s = x.toPrecision(2);
+        document.write(s + " type: " + typeof(s) + "<br>");
+
+
+
+        // toExponential
+        document.write("************ toExponential *************** <br>");
+        // after . adding with 10^something
+
+        s = x.toExponential(2);
+        document.write(s + " type: " + typeof(s) + "<br>");
+    </script>
+    
+</body>
+</html>
